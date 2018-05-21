@@ -10,7 +10,7 @@ task :hola do
 end
 end
 
-namespace :migrate do
+namespace :db do
   desc 'migrate to db'
   task :migrate => :environment do
     Student.create_table
